@@ -1,3 +1,170 @@
-h1, h2, h3, h4 {
-    color: gold;
+@font-face {
+    font-family: 'EBGaramond-Medium';
+    src: url('EBGaramond-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Bold.woff2') format('woff2'), url('Rubik-Bold.woff') format('woff'), url('Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Medium.woff2') format('woff2'), url('Rubik-Medium.woff') format('woff'), url('Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.woff2') format('woff2'), url('Rubik-Regular.woff') format('woff'), url('Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//font vars
+$main: 'EBGaramond-Medium', serif;
+$secondary:'Rubik', Arial, Helvetica, sans-serif;
+$tertiary: 'Overpass Mono',
+monospace;
+
+//color vars
+$black:#1f1f1f;
+$gray:#595959;
+$red:#bd2626;
+$blue:#376d95;
+
+h1,h2,h3,h4,h5,h6 {
+    color:$black;
+}
+
+h1, h2, h3, h5 {
+    font-family:$main;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.33px;
+
+    @media screen and (min-width: 992px) {
+        font-size: 60px;
+        line-height: 64px;
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+}
+
+
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+
+  @media screen and (min-width: 992px) {
+      font-size: 48px;
+      line-height: 52px;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+  }
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 34px;
+
+    @media screen and (min-width: 992px) {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 400;
+    }
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+
+    @media screen and (min-width: 992px) {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 500;
+    }
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-style: italic;
+    font-weight: 500;
+
+    @media screen and (min-width: 992px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+h6 {
+    font-family: $secondary;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 2px
+}
+
+p {
+    font-family: $secondary;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+p.big {
+    font-family: $secondary;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+
+    @media screen and (min-width: 992px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+p.small {
+    font-family: $secondary;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+p.meta {
+    font-family: $tertiary;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+}
+
+.btn-default {
+    background-color: $black;
+    font-family:$secondary;
+    padding:10px 20px;
+}
+
+.btn-lg {
+    padding:20px 30px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid $black; 
+}
+
+.btn-lg-outline {
+    background-color:transparent;
+    border: 2px solid $black;
 }
