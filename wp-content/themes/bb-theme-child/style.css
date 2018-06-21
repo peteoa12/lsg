@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'EBGaramond-Medium';
-  src: url("../fonts/../fonts/EBGaramond-Medium.ttf") format("truetype");
+  src: url("EBGaramond-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype");
+  src: url("Rubik-Bold.woff2") format("woff2"), url("Rubik-Bold.woff") format("woff"), url("Rubik-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype");
+  src: url("Rubik-Medium.woff2") format("woff2"), url("Rubik-Medium.woff") format("woff"), url("Rubik-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype");
+  src: url("Rubik-Regular.woff2") format("woff2"), url("Rubik-Regular.woff") format("woff"), url("Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -116,7 +116,13 @@ p.meta {
 .btn-default {
   background-color: #1f1f1f;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  position: relative; }
+  .btn-default:after {
+    position: absolute;
+    content: '>';
+    top: 8.5px;
+    right: 7px; }
 
 .btn-lg {
   padding: 20px 30px; }
@@ -128,3 +134,36 @@ p.meta {
 .btn-lg-outline {
   background-color: transparent;
   border: 2px solid #1f1f1f; }
+
+.link a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .link a::after {
+    content: '>'; }
+
+#homeHero .fl-col-content.fl-node-content {
+  min-height: 300px; }
+  @media screen and (min-width: 992px) {
+    #homeHero .fl-col-content.fl-node-content {
+      min-height: 500px; } }
+
+#homeHero .link {
+  padding-top: 20px;
+  text-align: center; }
+
+#section-1 #quote {
+  position: relative; }
+  #section-1 #quote::before {
+    position: absolute;
+    content: url(./img/quote.png);
+    left: 42%;
+    top: 0; }
+
+#section-1 .center-text {
+  padding-top: 3rem;
+  max-width: 600px;
+  margin: 0 auto; }

@@ -153,6 +153,14 @@ p.meta {
     background-color: $black;
     font-family:$secondary;
     padding:10px 20px;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '>';
+        top: 8.5px;
+        right: 7px;
+    }
 }
 
 .btn-lg {
@@ -167,4 +175,52 @@ p.meta {
 .btn-lg-outline {
     background-color:transparent;
     border: 2px solid $black;
+}
+
+.link a {
+    color:#fff !important;
+    text-transform:uppercase;
+    font-family:$secondary;
+    text-decoration:underline;
+    font-weight: 500;
+    letter-spacing:1px;
+
+    &::after {
+        content:'>';
+    }
+}
+
+#homeHero {
+
+    .fl-col-content.fl-node-content {
+        min-height: 300px;
+
+        @media screen and (min-width: 992px) {
+           min-height: 500px;
+        }
+    }
+
+    .link {
+        padding-top:20px;
+        text-align: center;        
+    }
+}
+
+#section-1 {
+
+    #quote {
+        position:relative;
+        
+        &::before {
+            position: absolute;
+            content: url(./img/quote.png);
+            left: 42%;
+            top: 0;
+        }
+    }
+    .center-text {
+        padding-top: 3rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
