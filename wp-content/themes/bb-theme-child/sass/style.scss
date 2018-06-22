@@ -256,3 +256,71 @@ footer {
         margin: 80px auto 30px;
     }
 }
+
+#nav {
+    font-family: $secondary;
+    
+
+    a {
+        text-transform: uppercase;
+        font-size:14px;
+        font-weight:medium;
+        letter-spacing: 1px;
+    }
+}
+
+#hero-alt {
+    .hero-text {
+        width: 76%;
+        margin: 6rem auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        max-width: 548px;
+        h6,h3 {
+            text-align: center;
+        }
+
+        h6 {
+            text-transform:uppercase;
+            letter-spacing:1px;
+            color:$red;
+            margin-bottom: -20px;
+        }
+    }
+}
+
+#counter {
+    font-family:$main;
+
+    .fl-number-after-text {
+        font-family:$secondary;
+        font-size:10px;
+        text-transform: uppercase;
+
+        
+    }
+
+    .fl-number-string {
+        &::after {
+            display: block;
+            content: url('./img/line-white.png');
+            height:20px;
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    
+}
+
+#map {
+    position: relative;
+
+    .porch {
+        background: url('./img/porch.png') no-repeat center center;
+        background-size:cover;
+        .map-content {
+
+        }
+    }
+}

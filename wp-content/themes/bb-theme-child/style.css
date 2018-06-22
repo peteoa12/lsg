@@ -193,3 +193,43 @@ footer {
     width: 217px;
     height: 90px;
     margin: 80px auto 30px; }
+
+#nav {
+  font-family: "Rubik", Arial, Helvetica, sans-serif; }
+  #nav a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 1px; }
+
+#hero-alt .hero-text {
+  width: 76%;
+  margin: 6rem auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-width: 548px; }
+  #hero-alt .hero-text h6, #hero-alt .hero-text h3 {
+    text-align: center; }
+  #hero-alt .hero-text h6 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #bd2626;
+    margin-bottom: -20px; }
+
+#counter {
+  font-family: "EBGaramond-Medium", serif; }
+  #counter .fl-number-after-text {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase; }
+  #counter .fl-number-string::after {
+    display: block;
+    content: url("./img/line-white.png");
+    height: 20px;
+    margin-bottom: 20px; }
+
+#map {
+  position: relative; }
+  #map .porch {
+    background: url("./img/porch.png") no-repeat center center;
+    background-size: cover; }
