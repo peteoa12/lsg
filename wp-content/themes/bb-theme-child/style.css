@@ -155,15 +155,41 @@ p.meta {
   padding-top: 20px;
   text-align: center; }
 
-#section-1 #quote {
-  position: relative; }
-  #section-1 #quote::before {
+#section-1 {
+  position: relative;
+  overflow: hidden; }
+  #section-1 .stripe {
+    content: url(./img/blue-stripe.png);
     position: absolute;
-    content: url(./img/quote.png);
-    left: 42%;
-    top: 0; }
+    left: 0;
+    width: 100vw;
+    min-width: 760px; }
+  #section-1 #quote {
+    position: relative;
+    margin-top: 5rem; }
+    #section-1 #quote::before {
+      position: absolute;
+      left: 0;
+      content: url(./img/quote.png);
+      left: 42%;
+      top: 0; }
+  #section-1 .center-text {
+    padding-top: 3rem;
+    max-width: 600px;
+    margin: 0 auto; }
 
-#section-1 .center-text {
-  padding-top: 3rem;
-  max-width: 600px;
-  margin: 0 auto; }
+footer {
+  overflow: hidden;
+  position: relative; }
+  footer .stripe {
+    content: url(./img/blue-stripe.png);
+    position: absolute;
+    right: -33%;
+    top: 0;
+    width: 100vw;
+    min-width: 760px; }
+  footer .footer-logo {
+    background: url(./img/footer-logo.png) no-repeat center center;
+    width: 217px;
+    height: 90px;
+    margin: 80px auto 30px; }
