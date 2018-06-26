@@ -4,25 +4,25 @@
 
 @font-face {
   font-family: 'EBGaramond-Medium';
-  src: url("EBGaramond-Medium.ttf") format("truetype");
+  src: url("./fonts/EBGaramond-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("Rubik-Bold.woff2") format("woff2"), url("Rubik-Bold.woff") format("woff"), url("Rubik-Bold.ttf") format("truetype");
+  src: url("./fonts/Rubik-Bold.woff2") format("woff2"), url("./fonts/Rubik-Bold.woff") format("woff"), url("./fonts/Rubik-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("Rubik-Medium.woff2") format("woff2"), url("Rubik-Medium.woff") format("woff"), url("Rubik-Medium.ttf") format("truetype");
+  src: url("./fonts/Rubik-Medium.woff2") format("woff2"), url("./fonts/Rubik-Medium.woff") format("woff"), url("./fonts/Rubik-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("Rubik-Regular.woff2") format("woff2"), url("Rubik-Regular.woff") format("woff"), url("Rubik-Regular.ttf") format("truetype");
+  src: url("./fonts/Rubik-Regular.woff2") format("woff2"), url("./fonts/Rubik-Regular.woff") format("woff"), url("./fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -120,27 +120,12 @@ p.meta {
   line-height: 19px;
   letter-spacing: -0.3px; }
 
-.btn-default {
-  background-color: #1f1f1f;
+.btn {
+  font-family: "Rubik", Arial, Helvetica, sans-serif; }
+
+.btn-center {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
-  padding: 10px 20px;
-  position: relative; }
-  .btn-default:after {
-    position: absolute;
-    content: '>';
-    top: 8.5px;
-    right: 7px; }
-
-.btn-lg {
-  padding: 20px 30px; }
-
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid #1f1f1f; }
-
-.btn-lg-outline {
-  background-color: transparent;
-  border: 2px solid #1f1f1f; }
+  margin: 0 auto; }
 
 .link a {
   color: #fff !important;
@@ -163,8 +148,7 @@ p.meta {
   text-align: center; }
 
 #section-1 {
-  position: relative;
-  overflow: hidden; }
+  overflow-x: hidden; }
   #section-1 .stripe {
     content: url(./img/blue-stripe.png);
     position: absolute;
