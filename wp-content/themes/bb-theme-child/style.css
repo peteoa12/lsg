@@ -1,3 +1,7 @@
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale; }
+
 @font-face {
   font-family: 'EBGaramond-Medium';
   src: url("EBGaramond-Medium.ttf") format("truetype");
@@ -84,6 +88,9 @@ h6 {
   line-height: 22px;
   font-weight: 500;
   letter-spacing: 2px; }
+
+p, p.big, p.small, p.meta, p span {
+  color: #595959 !important; }
 
 p {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
