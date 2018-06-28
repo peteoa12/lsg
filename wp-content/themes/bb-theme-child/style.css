@@ -9,6 +9,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'EBGaramond-Italic';
+  src: url("./fonts/EBGaramond-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Rubik';
   src: url("./fonts/Rubik-Bold.woff2") format("woff2"), url("./fonts/Rubik-Bold.woff") format("woff"), url("./fonts/Rubik-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -26,11 +32,21 @@
   font-weight: normal;
   font-style: normal; }
 
+.fl-row {
+  background: url("./img/paper.jpg"); }
+
 h1, h2, h3, h4, h5, h6 {
   color: #1f1f1f; }
 
-h1, h2, h3, h5 {
+h1, h2, h3 {
   font-family: "EBGaramond-Medium", serif; }
+
+h4, h6 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 500; }
+
+h5 {
+  font-family: "EBGaramond-Italic", serif; }
 
 h1 {
   font-size: 40px;
@@ -75,7 +91,6 @@ h4 {
 h5 {
   font-size: 24px;
   line-height: 32px;
-  font-style: italic;
   font-weight: 500; }
   @media screen and (min-width: 992px) {
     h5 {
@@ -87,7 +102,8 @@ h6 {
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 p, p.big, p.small, p.meta, p span {
   color: #595959 !important; }
@@ -120,12 +136,8 @@ p.meta {
   line-height: 19px;
   letter-spacing: -0.3px; }
 
-.btn {
+.fl-button {
   font-family: "Rubik", Arial, Helvetica, sans-serif; }
-
-.btn-center {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
-  margin: 0 auto; }
 
 .link a {
   color: #fff !important;
@@ -143,34 +155,43 @@ p.meta {
     #homeHero .fl-col-content.fl-node-content {
       min-height: 500px; } }
 
-#homeHero .link {
-  padding-top: 20px;
-  text-align: center; }
+.footer-texture {
+  content: url(./img/footer-edge.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw; }
 
-#section-1 {
-  overflow-x: hidden; }
-  #section-1 .stripe {
-    content: url(./img/blue-stripe.png);
+.hero-edge-texture {
+  content: url(./img/btm-edge.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw; }
+
+#section-1 .stripe {
+  content: url(./img/blue-stripe.png);
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  min-width: 760px; }
+
+#section-1 #quote {
+  position: relative;
+  margin-top: 5rem; }
+  #section-1 #quote::before {
     position: absolute;
     left: 0;
-    width: 100vw;
-    min-width: 760px; }
-  #section-1 #quote {
-    position: relative;
-    margin-top: 5rem; }
-    #section-1 #quote::before {
-      position: absolute;
-      left: 0;
-      content: url(./img/quote.png);
-      left: 42%;
-      top: 0; }
-  #section-1 .center-text {
-    padding-top: 3rem;
-    max-width: 600px;
-    margin: 0 auto; }
+    content: url(./img/quote.png);
+    left: 42%;
+    top: 0; }
+
+#section-1 .center-text {
+  padding-top: 3rem;
+  max-width: 600px;
+  margin: 0 auto; }
 
 footer {
-  overflow: hidden;
   position: relative; }
   footer .stripe {
     content: url(./img/blue-stripe.png);
